@@ -8,10 +8,10 @@ class App(tk.Frame):
     
     def __init__ (self, master=None):
         super().__init__(master)
-        self.grid()
+        self.pack()
 
         # Creating our label  and attaching it to our frame(self)
-        tk.Label(self, text = "Enter a decimal number: ").grid(column = 0, row = 6)
+        tk.Label(self, text = "Enter a decimal number: ").pack()
         # Creating our entry widget
         self.entrythingy = tk.Entry()
         # Attaching it to the frame
