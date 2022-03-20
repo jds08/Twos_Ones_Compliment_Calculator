@@ -1,19 +1,9 @@
+from tkinter import *
 
-import tkinter as tk
+root = Tk()
 
-class App(tk.Frame):
-    def __init__(self, master=None):
-        super().__init__(master)
-        self.pack()
+# padx parameter edits wigets size
+button = Button(root, text= 'Click me', padx=70)
+button.grid(row=0, column=0)
 
-# create the application
-myapp = App()
-
-#
-# here are method calls to the window manager class
-#
-myapp.master.title("My Do-Nothing Application")
-myapp.master.maxsize(1000, 400)
-
-# start the program
-myapp.mainloop()
+root.mainloop()
